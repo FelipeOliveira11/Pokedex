@@ -1,0 +1,132 @@
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: lavender;
+  text-align: center;
+}
+
+.App-logo {
+  height: 100vh;
+  pointer-events: none;
+  position: fixed;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 2rem;
+  padding-top: 2rem;
+}
+
+.row {
+  margin: 5rem;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (max-width: 1440px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* @media (min-width: 800px) {
+  .column {
+    width: 25%;
+    display: block;
+    margin-bottom: 20px;
+  }
+} */
+
+.card {
+  display: block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  background-color: #f1f1f1;
+  border: solid black 3px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  backdrop-filter: blur(0.5rem);
+  transform: translateX(0) scale(1);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card p {
+  display: flex;
+  flex-direction: row;
+  background: white;
+  border-radius: 5px;
+  border: 3px solid;
+}
+
+.img-card {
+  background: no-repeat center url(../assets/grass.png);
+  border: 3px solid;
+  border-radius: 5px;
+}
+
+.card strong {
+  margin-right: 0.125rem;
+}
+
+.card small {
+  position: relative;
+  margin-left: 95px;
+  bottom: 35px;
+}
+
+.card:hover {
+  transform: translateX(10px) scale(1.2);
+}
+
+.card img {
+  display: flex;
+  margin: 0 auto;
+  height: 150px;
+}
+
+h1 {
+  text-align: center;
+}
