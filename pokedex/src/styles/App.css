@@ -1,3 +1,7 @@
+input {
+  z-index: 999;
+}
+
 @media (max-width: 1080px) {
   html {
     font-size: 93.75%;
@@ -25,9 +29,15 @@ body {
 }
 
 .App-logo {
-  height: 100vh;
-  pointer-events: none;
+  width: 100vh;
+}
+
+.pokebola-logo {
+  z-index: -999;
+  width: 100%;
   position: fixed;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -62,21 +72,13 @@ body {
   clear: both;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1024px) {
   .column {
     width: 100%;
     display: block;
     margin-bottom: 20px;
   }
 }
-
-/* @media (min-width: 800px) {
-  .column {
-    width: 25%;
-    display: block;
-    margin-bottom: 20px;
-  }
-} */
 
 .card {
   display: block;
